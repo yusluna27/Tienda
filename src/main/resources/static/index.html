@@ -3,22 +3,42 @@
     <head>
         <title>Tienda en Linea</title>
         <meta charset="UTF-8">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .prioridad {
+                color:cyan;
+            }
+        </style>
     </head>
     <body>
         <div>
-            <h1 style= "text-align:center;"> Home</h1>
+            <h1 id="titiloPrincipal" style= "text-align:center;"> Home</h1>
             <p>Bienvenidos al curso de Web y Patrones</p>
         </div>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris laoreet nunc vel commodo bibendum. Ut eget mi laoreet, aliquam turpis sed, vulputate neque. In elit arcu, luctus quis lobortis a, accumsan sed lorem. Aliquam eget nulla ac massa commodo condimentum. Suspendisse quis enim posuere, accumsan nulla non, laoreet lectus. Nullam nec rhoncus massa, non pharetra elit. Pellentesque mauris ante, sagittis in blandit sit amet, vulputate et risus. Integer quis erat et turpis egestas fermentum commodo ut lorem. Donec ullamcorper odio sed orci porttitor, vel placerat justo ultricies. Sed at blandit nisl. Nam auctor finibus tellus, at hendrerit ipsum elementum a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc eget ligula sit amet nisi tincidunt facilisis vel ornare nisi.
-        <p>Fusce sem quam, commodo sed metus non, ullamcorper dignissim nunc. In accumsan ullamcorper pharetra. Integer pellentesque tellus lectus, vel tempus purus tincidunt at. Integer ultricies libero eros, ut porttitor tellus mattis sed. In lacus mi, tincidunt sed sem vitae, cursus vulputate risus. Phasellus congue purus tincidunt, pharetra justo id, finibus mauris. Aliquam in libero sollicitudin, ullamcorper dui vel, blandit sapien. Ut tincidunt vulputate nibh vel condimentum. Etiam ac ullamcorper nisl.
-        <p>Sed quis luctus leo. Aliquam at ligula at massa pretium eleifend nec eget odio. Suspendisse ornare auctor tellus a tristique. Sed venenatis lorem nec velit maximus, gravida cursus sapien ultricies. Nunc et libero quam. Vestibulum consectetur justo ut porttitor tempor. Suspendisse dapibus cursus massa, eget vulputate purus posuere a. Fusce est arcu, pulvinar sit amet metus sed, porttitor ullamcorper quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ut nisl id leo sollicitudin tincidunt. Suspendisse eget placerat nibh. Vestibulum eget imperdiet augue. Suspendisse sed felis ut eros pulvinar cursus. Maecenas odio enim, ultricies vel lectus in, pharetra sagittis nisi.
+        <p class="parrafoNegrita parrafoEspecial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris laoreet nunc vel commodo bibendum. Ut eget mi laoreet, aliquam turpis sed, vulputate neque. In elit arcu, luctus quis lobortis a, accumsan sed lorem. Aliquam eget nulla ac massa commodo condimentum. Suspendisse quis enim posuere, accumsan nulla non, laoreet lectus. Nullam nec rhoncus massa, non pharetra elit. Pellentesque mauris ante, sagittis in blandit sit amet, vulputate et risus. Integer quis erat et turpis egestas fermentum commodo ut lorem. Donec ullamcorper odio sed orci porttitor, vel placerat justo ultricies. Sed at blandit nisl. Nam auctor finibus tellus, at hendrerit ipsum elementum a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc eget ligula sit amet nisi tincidunt facilisis vel ornare nisi.
+        <p class="parrafoNegrita">Fusce sem quam, commodo sed metus non, ullamcorper dignissim nunc. In accumsan ullamcorper pharetra. Integer pellentesque tellus lectus, vel tempus purus tincidunt at. Integer ultricies libero eros, ut porttitor tellus mattis sed. In lacus mi, tincidunt sed sem vitae, cursus vulputate risus. Phasellus congue purus tincidunt, pharetra justo id, finibus mauris. Aliquam in libero sollicitudin, ullamcorper dui vel, blandit sapien. Ut tincidunt vulputate nibh vel condimentum. Etiam ac ullamcorper nisl.
+        <p>Sed quis luctus leo. Aliquam at<span class="parrafoNegrita"> ligula at massa pretium </span>eleifend nec eget odio. Suspendisse ornare auctor tellus a tristique. Sed venenatis lorem nec velit maximus, gravida cursus sapien ultricies. Nunc et libero quam. Vestibulum consectetur justo ut porttitor tempor. Suspendisse dapibus cursus massa, eget vulputate purus posuere a. Fusce est arcu, pulvinar sit amet metus sed, porttitor ullamcorper quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ut nisl id leo sollicitudin tincidunt. Suspendisse eget placerat nibh. Vestibulum eget imperdiet augue. Suspendisse sed felis ut eros pulvinar cursus. Maecenas odio enim, ultricies vel lectus in, pharetra sagittis nisi.
         <br />
         <br />
         <br />
+        <p class="prioridad" style="color: purple;">Ejemplo de prioridades de CSS</p>
+        <br />
+        <div class="ejemploCajas">
+            Ejemplo de texto
+        </div>
+        <br />
+        <audio controls>
+            <source src="audios/musica.mp3" type="audio/mpeg">
+            Your browser does not support the <code>audio</code> tag.
+        </audio>
         <br />
         <br />
+        <video width="320" height="240" controls>
+            <source src="videos/video.mp4" type="video/mp4">
+            Your browser does not support the <code>video</code> tag.
+        </video>
         <br />
+        <p class="prioridad2 prioridad1">Ultima Linea....</p>
         <p> Ultima Linea....</p>
     </body>
 </html>

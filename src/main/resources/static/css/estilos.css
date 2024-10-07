@@ -1,9 +1,72 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : 29 sept 2024, 9:43:19 p. m.
-    Author     : yusme
-*/
+#tituloPrincipal {
+    color: #DB5C7D;
+    font-size: 50px;
+}
 
+.parrofoNegrita {
+    font-weight: bold;
+    color: blueviolet;
+    
+}
+
+.parrofoEspecial{
+    font-family: Comic Sans MS;
+}
+
+.prioridad {
+    color: lightsalmon;
+}
+
+.prioridad2 {
+    color: blueviolet;
+}
+
+.prioridad1 {
+    color: lightsalmon;
+}
+
+p {
+    word-spacing: 8px;
+}
+
+.ejemploCajas {
+    border: 2px solid black;
+    /* 1 parámetro = aplica los 4 lados*/
+    /*      padding-top: 10px; */
+    
+    /* 2 parámetro = top/bottom - left/right*/
+    /*      padding: 20px 10px; */
+    
+    /* 3 parámetro = top - left/right - bottom - */
+    /*padding: 20px 10px 15px; */
+    
+    /* 4 parámetro = top - right - bottom - left*/
+    /* padding: 20px 10px 30px;*/
+    margin: 20px 10px 30px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a:link {
+    color: crimson;
+    background-color: fuchsia;
+    border: 2px solid fuchsia;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+a:visited {
+    color: darkseagreen;
+}
+
+a:hover {
+    color: deeppink;
+    background-color: aquamarine;
+    transition: 1.5s;
+}
+
+a:active {
+    color: white;
+    background-color: purple;
+}
