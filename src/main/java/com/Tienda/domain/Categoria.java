@@ -18,14 +18,14 @@ public class Categoria implements Serializable{
     private Long idCategoria;
     private String descripcion;
     private String rutaImagen;
-    private boolean activos;
+    private boolean activo;
     
     public Categoria(){
     }
     
-    public Categoria(String descripcion,String rutaImagen,boolean activos){
+    public Categoria(String descripcion,String rutaImagen,boolean activo){
         this.descripcion = descripcion;
         this.rutaImagen = rutaImagen;
-        this.activos = activos;
+        this.activo= activo;
     }
 }
