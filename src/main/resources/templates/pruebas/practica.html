@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{layout/plantilla :: head}">
+        <title>TechShop</title>
+    </head>
+    <body>
+        <section th:fragment="existencias" class="bg-light">
+        <div class="row py-2">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form method="POST" th:action="@{/pruebas/Existencias}"
+                      class="was-validated">
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+                            <input type="number" class="form-control"
+                                   th:name="existencias"
+                                   th:value="${existencias}"
+                                   placeholder="Cantidad de existencias a buscar..."
+                                   aria-label="Existencias"
+                                   aria-describedby="basic-addon1"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="submit" class="btn btn-info">
+                            <i class="fas fa-check"></i> Buscar existencias
+                        </button>
+                    </div>
+                </form>
+            </div>
+            </section>
+    </body>
+</html>
