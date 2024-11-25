@@ -66,13 +66,13 @@ public class ProductoServiceImpl implements ProductoService {
 
     @Override
     @Transactional(readOnly=true)
-    public List<Producto> busarPorNombre(String nombre) {
+    public List<Producto> buscarPorNombre(String nombre) {
         return productoDao.findByDescripcionContainingOrderByPrecio(nombre);
     }
 
     @Override
     @Transactional(readOnly=true)
-    public List<Producto> busarPorExistencia(Integer existencias) {
+    public List<Producto> buscarPorExistencia(Integer existencias) {
         return productoDao.findByExistencias(existencias);
     }
     

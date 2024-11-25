@@ -50,6 +50,14 @@ public class PruebasController {
         model.addAttribute("totalProductos", productos.size());
         return "/pruebas/listado2";
     }
+    
+    @GetMapping("/listado3")
+    public String listado3(Model model) {
+        var productos = productoService.getProductos(false);
+        model.addAttribute("productos", productos);
+        model.addAttribute("totalProductos", productos.size());
+        return "/pruebas/listado3";
+    }
 
     @PostMapping("/query1")
     public String consultaQuery1(@RequestParam(value = "precioInf") double precioInf,
@@ -86,7 +94,7 @@ public class PruebasController {
     
     @PostMapping("/QueryName")
     public String consultaQueryName(@RequestParam(value = "productName") String nombre, Model model) {
-        List<Producto> productos = productoService.busarPorNombre(nombre);
+        List<Producto> productos = productoService.buscarPorNombre(nombre);
         model.addAttribute("productos", productos);
         model.addAttribute("totalProductos", productos.size());
         model.addAttribute("productName", nombre);
@@ -95,10 +103,10 @@ public class PruebasController {
     
     @PostMapping("/Existencias")
     public String consultaExistencias(@RequestParam(value = "existencias") Integer existencias, Model model) {
-        List<Producto> productos = productoService.busarPorExistencia(existencias);
+        List<Producto> productos = productoService.buscarPorExistencia(existencias);
         model.addAttribute("productos", productos);
         model.addAttribute("totalProductos", productos.size());
         model.addAttribute("existencias", existencias);
-        return "/pruebas/listado2";
+        return "/pruebas/listado3";
     }   
 }
